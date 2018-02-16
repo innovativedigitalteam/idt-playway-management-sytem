@@ -1,0 +1,183 @@
+
+.bottom .info_left, .breakfast .info_left {
+	float: left;
+	margin-right: 25px;
+}
+
+.top .info_left {
+	float: left;
+	margin-right: 65px;
+}
+
+.nappies-title {
+  font-size: 16px;
+}
+
+.nappies-wrapper button, .add_yardam_button, .add_yardpm_button {
+  color: #0073aa!important;
+  cursor: pointer;
+  margin-bottom: 15px;
+  position: inherit!important;
+  transition: 0.3s;
+}
+
+.nappies-wrapper button:hover, .add_yardam_button:hover, .add_yardpm_button:hover {
+  background: #0073aa!important;
+  color: white!important;
+}
+
+.nappies {
+  margin-bottom: 25px;
+}
+
+.nappies input[type=text] {
+  margin-bottom: 10px;
+}
+
+.yardsam, .yardspm {
+  margin-bottom: 20px;
+}
+
+.yardsam.hidden, .add_yardam_button.hidden, .yardspm.hidden, .add_yardpm_button.hidden {
+  display: none;
+}
+
+@media (max-width: 1607px) {
+  .bottom {
+    margin-bottom: 75px;
+    width: 1100px;
+  }
+}	
+
+@media (max-width: 1575px) {
+  	
+  .bottom {
+    margin-bottom: 35px;
+    width: 900px;
+  }
+}	
+
+@media (max-width: 1555px) {
+  	
+  .top {
+    width: 900px;
+  }
+
+  .top .nappies {
+  	margin-top: 75px
+  }
+
+  .bottom {
+    width: 870px;
+  }
+}	
+
+@media (max-width: 1370px) {
+  	
+  .top {
+    width: 840px;
+  }
+
+  .top .cafternoon {
+  	margin-top: 90px;
+  }
+
+.bottom {
+  	width: 640px;
+  }
+
+}	
+
+@media (max-width: 1024px) {
+  	
+  .top {
+    width: 440px;
+  }
+
+  .top .clunch {
+  	margin-top: 26px;
+  }
+  .top .nappies {
+  	margin-top: 170px;
+  }
+.bottom {
+  	width: 420px;
+    margin-bottom: 330px;
+  }
+
+  .breakfast {
+  	width: 420px;
+  }
+
+  .nappies-wrapper button, .add_yardam_button, .add_yardpm_button {
+    padding: 5px 15px!important;
+  }  
+
+  .yards b {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  	
+  .bottom {
+    margin-bottom: 25px;
+  }
+	
+.top {
+	width: auto;
+}
+
+.bottom {
+	width: 500px;
+}
+
+.breakfast {
+  	width: auto
+  }
+
+
+}
+
+@media (max-width: 440px) {
+  	
+  .top {
+    width: 270px;
+  }
+
+  .top .cmorning, .top .nappies {
+  	margin-top: 25px;
+  }
+
+  .bottom {
+  	width: 270px
+  }
+
+}
+
+@media (max-width: 667px) {
+
+.breakfast {
+  	width: 500px;
+  }
+
+
+}
+
+@media (max-width: 414px) {
+
+.breakfast {
+  	width: 250px;
+  }
+
+
+}
+
+@media (max-width: 1366px) {
+  	
+  .meta_field {
+    margin-bottom: 20px;
+  }
+
+}

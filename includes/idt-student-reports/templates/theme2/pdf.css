@@ -1,0 +1,143 @@
+#masthead,
+.intro-section,
+.dashboard-section,
+.sr-welcome,
+.savepdf {
+    display: none !important;
+}
+
+section {
+    width: 960px !important;
+    border: 1px solid #555;
+    padding-left: 15px;
+    padding-right: 15px;
+    page-break-inside: avoid !important;
+}
+
+.one-section-background h1 {
+    margin-top: 160px !important;
+}
+
+.one-section-background {
+    background: transparent url("images/bg1.png") no-repeat left center !important;
+    border: none;
+}
+
+.two-section-background {
+    background: url("images/bg2.png") no-repeat left center !important;
+}
+
+.two-section-background .container {
+    padding-top: 38px;
+    padding-left: 25px;
+    padding-right: 46px;
+}
+
+.three-section-background {
+    background: transparent url("images/bg3.png") no-repeat left center !important;
+}
+
+.four-section-background {
+    background: transparent url("images/bg4.png") no-repeat left center !important;
+    border: none;
+}
+
+.four-section-background .container {
+    padding: 0px 30px !important;
+
+}
+
+.five-section-background {
+    background: transparent url("images/bg5.png") no-repeat left center !important;
+}
+
+.six-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center !important;
+}
+
+.seven-section-background {
+    background: transparent url("images/bg7.png") no-repeat left center !important;
+    border: none;
+}
+
+.eight-section-background {
+    background: transparent url("images/bg8.png") no-repeat left center !important;
+}
+
+.nine-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center !important;
+}
+
+.ten-section-background {
+    background: transparent url("images/bga.png") no-repeat left center !important;
+    border: none;
+}
+
+.eleven-section-background {
+    background: transparent url("images/bgb.png") no-repeat left center !important;
+}
+
+.twelve-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center !important;
+}
+
+.thirteen-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center !important;
+}
+
+.fourteen-section-background {
+    background: transparent url("images/bge.png") no-repeat left center !important;
+    border: none;
+}
+
+.fifteen-section-background {
+    background: transparent url("images/bgf.png") no-repeat left center !important;
+}
+
+.sixteen-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center !important;
+}
+
+.seventeen-section-background {
+    background: transparent url("images/bg11.png") no-repeat left center !important;
+    border: none;
+}
+
+.eighteen-section-background {
+    background: transparent url("images/bg12.png") no-repeat left center !important;
+}
+
+.nineteen-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center !important;
+}
+
+.twenty-section-background {
+    background: transparent url("images/bg14.png") no-repeat left center !important;
+    border: none;
+}
+
+.photos-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center !important;
+}
+
+h1 {
+    margin-top: 0 !important;
+}
+
+.five-section-background .col-3,
+.eight-section-background .col-3,
+.eleven-section-background .col-3,
+.fifteen-section-background .col-3,
+.eighteen-section-background .col-3 {
+    width: 21%;
+    padding: 0;
+    margin-right: 25px;
+}
+
+tr > td {
+    text-align: center;
+}
+
+tr.sr-say-caption > td {
+    font-size: 1.2em;
+}

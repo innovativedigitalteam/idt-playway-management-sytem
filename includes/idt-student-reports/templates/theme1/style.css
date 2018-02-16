@@ -1,0 +1,112 @@
+.sr-student-report-container{
+	margin-bottom: 100px;
+}
+
+.sr-page{
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	min-height: 300px;
+	padding: 10px 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);	
+}
+
+.sr-page-empty{
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	min-height: 50px;
+	padding: 10px 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);	
+}
+
+.sr-page#dashboard{
+	min-height: 100px;
+}
+
+.sr-report-title{
+	text-align: center;
+	font-size: 42px;
+}
+
+.sr-current-report-label{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #00a0d2;
+}
+
+.sr-report-student-title{
+	text-align: center;
+	font-size: 72px;
+}
+
+.sr-report-date{
+	text-align: center;	
+	font-size: 18px;
+	font-style: italic;
+}
+
+.sr-page-number{
+	color: #ccc;
+}
+
+.sr-page-title{
+	font-size: 32px;
+}
+
+.sr-thankyou{
+	text-align: center;
+	font-size: 72px;
+	margin-top: 40px;	
+}
+
+.sr-photo{
+	height: 150px;
+	text-align: center;
+	padding: 0;	
+}
+
+.sr-photo-date{
+	text-align: center;
+}
+
+.sr-recent-reports,
+.sr-recent-reports td{
+	border: none;
+}
+
+.photos-table,
+.photos-table  td{
+	border: none;
+}
+
+
+.sr-report-link{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	border: 1px solid black;
+	padding: 2px 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);	
+}
+
+#sr-current-report{
+	font-weight: bold;
+	color: #00a0d2;
+	border: 1px solid #00a0d2;
+	padding: 2px 5px;
+}
+
+.sr-photo img{
+	display: block;	
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+	padding: 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	opacity: 0.7; 
+}
+
+.sr-photo:hover img{
+	opacity: 1; 
+}

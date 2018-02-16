@@ -1,0 +1,1972 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
+}
+
+#content {
+    background-color: #9e9e9e;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPjxyZWN0IHdpZHRoPSI1IiBoZWlnaHQ9IjUiIGZpbGw9IiM5ZTllOWUiPjwvcmVjdD48cGF0aCBkPSJNMCA1TDUgMFpNNiA0TDQgNlpNLTEgMUwxIC0xWiIgc3Ryb2tlPSIjODg4IiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD48L3N2Zz4=);
+    -webkit-transition: left 500ms;
+    transition: left 500ms;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    color: rgb(0, 0, 0);
+    /*white-space: pre-wrap;*/
+    /* css-3 */
+    /*white-space: -moz-pre-wrap;*/
+    /* Mozilla, since 1999 */
+    /*white-space: -pre-wrap;*/
+    /* Opera 4-6 */
+    /*white-space: -o-pre-wrap;*/
+    /* Opera 7 */
+    /*word-wrap: break-word;*/
+    /* Internet Explorer 5.5+ */
+}
+
+.col-1,
+.col-2 {
+    width: 440px;
+    padding: 40px;
+    float: left;
+}
+
+.col-1 h4 {
+    margin-bottom: 30px;
+}
+
+.col-3 {
+    width: 210px;
+    padding: 20px;
+    float: right;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    padding: 40px;
+    width: 960px !important;
+}
+
+section {
+    display: block;
+    background-size: 960px 100% !important;
+    margin: 13px auto;
+    box-shadow: 1px 1px 3px 1px #333;
+    width: 960px !important;
+    height: 540px;
+    min-height: 540px;
+}
+
+section.sr-adaptive {
+    height: auto;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 65px;
+    font-weight: 300;
+    text-align: center;
+    /*margin-top: 155px;*/
+    color: rgb(38, 38, 38);
+    line-height: 55px;
+}
+
+h3 {
+    font-size: 36px;
+    font-family: 'Aguafina Script', cursive;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(136, 121, 82);
+    line-height: 60px;
+}
+
+h4 {
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+zz
+.one-section-background {
+    background: transparent url("images/bg1.png") no-repeat left center;
+}
+
+.one-section-background h3 {
+    margin-top: 10px;
+}
+
+.two-section-background {
+    background: transparent url("images/bg2.png") no-repeat left center;
+}
+
+.two-section-background p {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.three-section-background {
+    background: transparent url("images/bg3.png") no-repeat left center;
+}
+
+.four-section-background {
+    background: transparent url("images/bg4.png") no-repeat left center;
+}
+
+.four-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 45px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 140px;
+    color: rgb(38, 38, 38);
+}
+
+.four-section-background h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+.five-section-background {
+    background: transparent url("images/bg5.png") no-repeat left center;
+}
+
+.five-section-background h3 {
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.six-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center;
+}
+
+.six-section-background h1 {
+    font-size: 42px;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 65px;
+    color: rgb(38, 38, 38);
+}
+
+.seven-section-background {
+    background: transparent url("images/bg7.png") no-repeat left center;
+}
+
+.seven-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 140px;
+    color: rgb(38, 38, 38);
+    line-height: 50px;
+}
+
+.seven-section-background h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+.sr_cycle {
+
+    background: transparent url("images/sr_cycle.png") no-repeat left center;
+
+}
+
+.eight-section-background {
+    background: transparent url("images/bg8.png") no-repeat left center;
+}
+
+.eight-section-background h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 26px;
+    margin-top: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.nine-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center;
+}
+
+.nine-section-background h1 {
+    text-align: left;
+    margin-left: 37px;
+    margin-top: 40px;
+}
+
+.ten-section-background {
+    background: transparent url("images/bga.png") no-repeat left center;
+}
+
+.ten-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 140px;
+    color: rgb(38, 38, 38);
+}
+
+.ten-section-background h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+.eleven-section-background {
+    background: transparent url("images/bgb.png") no-repeat left center;
+}
+
+.eleven-section-background h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 26px;
+    margin-top: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.twelve-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center;
+}
+
+.twelve-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 42px;
+    margin-top: 50px;
+    margin-left: 40px;
+    text-align: left;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+.thirteen-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center;
+}
+
+.thirteen-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 42px;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+.fourteen-section-background {
+    background: transparent url("images/bge.png") no-repeat left center;
+}
+
+.fourteen-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 140px;
+    color: rgb(38, 38, 38);
+}
+
+.fifteen-section-background {
+    background: transparent url("images/bgf.png") no-repeat left center;
+}
+
+.fifteen-section-background h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 26px;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.sixteen-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center;
+}
+
+.sixteen-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 42px;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+.seventeen-section-background {
+    background: transparent url("images/bg11.png") no-repeat left center;
+}
+
+.seventeen-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 140px;
+    color: rgb(38, 38, 38);
+}
+
+.seventeen-section-background h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+.eighteen-section-background {
+    background: transparent url("images/bg12.png") no-repeat left center;
+}
+
+.eighteen-section-background h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 26px;
+    margin-top: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.nineteen-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center;
+}
+
+.nineteen-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 42px;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+.twenty-section-background {
+    background: transparent url("images/bg14.png") no-repeat left center;
+}
+
+.twenty-section-background h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 90px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 140px;
+    color: rgb(38, 38, 38);
+}
+
+.twenty-section-background h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    line-height: 30px;
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+.five-section-background p,
+.eight-section-background p,
+.eleven-section-background p,
+.fifteen-section-background p,
+.eighteen-section-background p {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.photos-section-background {
+    background: transparent url("images/bg13.png") no-repeat left center;
+}
+
+@media (max-width: 960px) {
+    section {
+        width: auto;
+        height: auto;
+        padding-bottom: 56.33%;
+        max-height: 20.000em;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 1.429em;
+    }
+
+    h1 {
+        /*margin-top: 6em;*/
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2.286em;
+    }
+
+    h4 {
+        font-size: 1.429em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .one-section-background h1 {
+        margin-top: 3.3em;
+    }
+
+    .two-section-background p {
+        padding: 0;
+    }
+
+    .three-section-background .col-1,
+    .col-2 {
+        width: 50%;
+        margin: 0;
+        padding: 0.714em;
+        float: left;
+    }
+
+    .three-section-background h1 {
+        font-size: 2.771em;
+        text-align: left;
+        font-family: 'Aguafina Script', cursive;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        color: rgb(136, 121, 82);
+    }
+
+    .three-section-background h4 {
+        font-family: 'Muli', sans-serif;
+        font-size: 1.714em;
+        margin: 0;
+    }
+
+    .four-section-background .container {
+        margin: 0 auto;
+        padding: 4.286em;
+        width: 80%;
+    }
+
+    .four-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 2.286em;
+        margin: 0 auto;
+    }
+
+    .four-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background .col-3,
+    .eight-section-background .col-3,
+    .eleven-section-background .col-3,
+    .fifteen-section-background .col-3,
+    .eighteen-section-background .col-3 {
+        width: 20%;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .five-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .six-section-background h1 {
+        font-family: 'Muli', sans-serif;
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+        font-weight: 400;
+        color: rgb(38, 38, 38);
+    }
+
+    .seven-section-background .container {
+        width: 80%;
+    }
+
+    .seven-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.3em;
+        margin: 0 auto;
+    }
+
+    .seven-section-background h3 {
+        font-size: 1.250em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .eight-section-background h3 {
+        font-size: 1.714em;
+        text-align: left;
+    }
+
+    .eight-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nine-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .ten-section-background .container {
+        width: 80%;
+    }
+
+    .ten-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .ten-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eleven-section-background h3 {
+        font-size: 1.714em;
+        text-align: left;
+    }
+
+    .eleven-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .twelve-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .thirteen-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .fourteen-section-background .container {
+        width: 80%;
+    }
+
+    .fourteen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .fourteen-section-background h3 {
+        font-size: 1.714em
+    }
+
+    .fifteen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .fifteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .seventeen-section-background .container {
+        width: 80%;
+    }
+
+    .sixteen-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .seventeen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 3.286em;
+        margin: 0 auto;
+    }
+
+    .seventeen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eighteen-section-background h3 {
+        font-size: 1.714em;
+        text-align: left;
+    }
+
+    .eighteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nineteen-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .twenty-section-background .container {
+        width: 80%;
+    }
+
+    .twenty-section-background h1 {
+        font-size: 5.000em;
+        margin-top: 2em;
+    }
+
+    .twenty-section-background h3 {
+        font-size: 1.2em;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 763px) {
+    section {
+        width: auto;
+        height: auto;
+        padding-bottom: 56.33%;
+        max-height: 20.000em;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 1.429em;
+    }
+
+    h1 {
+        /*margin-top: 6em;*/
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2.286em;
+    }
+
+    h4 {
+        font-size: 1.429em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .one-section-background h1 {
+        margin-top: 4em;
+    }
+
+    .two-section-background p {
+        padding: 0;
+    }
+
+    .three-section-background .col-1,
+    .col-2 {
+        width: 50%;
+        margin: 0;
+        padding: 0.714em;
+        float: left;
+    }
+
+    .three-section-background h1 {
+        font-size: 2.571em;
+        text-align: left;
+        font-family: 'Aguafina Script', cursive;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        color: rgb(136, 121, 82);
+    }
+
+    .three-section-background h4 {
+        font-family: 'Muli', sans-serif;
+        font-size: 1.714em;
+        margin: 0;
+    }
+
+    .four-section-background .container {
+        margin: 0 auto;
+        padding: 4.286em;
+        width: 80%;
+    }
+
+    .four-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 3.286em;
+        margin: 0 auto;
+    }
+
+    .four-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background .col-3,
+    .eight-section-background .col-3,
+    .eleven-section-background .col-3,
+    .fifteen-section-background .col-3,
+    .eighteen-section-background .col-3 {
+        width: 20%;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .five-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .six-section-background h1 {
+        font-family: 'Muli', sans-serif;
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+        font-weight: 400;
+        color: rgb(38, 38, 38);
+    }
+
+    .seven-section-background .container {
+        width: 80%;
+    }
+
+    .seven-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .seven-section-background h3 {
+        font-size: 1.250em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .eight-section-background h3 {
+        font-size: 1.714em;
+        text-align: left;
+    }
+
+    .eight-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nine-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .ten-section-background .container {
+        width: 80%;
+    }
+
+    .ten-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .ten-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eleven-section-background h3 {
+        font-size: 1.714em;
+        text-align: left;
+    }
+
+    .eleven-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .twelve-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .thirteen-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .fourteen-section-background .container {
+        width: 80%;
+    }
+
+    .fourteen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .fourteen-section-background h3 {
+        font-size: 1.714em
+    }
+
+    .fifteen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .fifteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .seventeen-section-background .container {
+        width: 80%;
+    }
+
+    .sixteen-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .seventeen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 3.286em;
+        margin: 0 auto;
+    }
+
+    .seventeen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eighteen-section-background h3 {
+        font-size: 1.714em;
+        text-align: left;
+    }
+
+    .eighteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nineteen-section-background h1 {
+        font-size: 3em;
+        margin-left: 0.9em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .twenty-section-background .container {
+        width: 80%;
+    }
+
+    .twenty-section-background h1 {
+        font-size: 5.000em;
+        margin-top: 2em;
+    }
+
+    .twenty-section-background h3 {
+        font-size: 1.2em;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: auto;
+        height: auto;
+        padding-bottom: 56.33%;
+        max-height: 20.000em;
+    }
+
+    body {
+        font-size: 7px;
+    }
+
+    .container {
+        padding: 1.429em;
+    }
+
+    h1 {
+        /*margin-top: 5em;*/
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2.286em;
+    }
+
+    h4 {
+        font-size: 1.429em;
+    }
+
+    .one-section-background h1 {
+        margin-top: 4.5em;
+    }
+
+    .two-section-background p {
+        padding: 0;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.3;
+    }
+
+    .three-section-background .col-1,
+    .col-2 {
+        width: 50%;
+        margin: 0;
+        padding: 0.714em;
+        float: left;
+    }
+
+    .three-section-background h1 {
+        font-size: 2.571em;
+        text-align: left;
+        font-family: 'Aguafina Script', cursive;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        color: rgb(136, 121, 82);
+    }
+
+    .three-section-background h4 {
+        font-family: 'Muli', sans-serif;
+        font-size: 1.714em;
+        margin: 0;
+    }
+
+    .four-section-background .container {
+        margin: 0 auto;
+        padding: 4.286em;
+        width: 80%;
+    }
+
+    .four-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 3em;
+        margin: 0 auto;
+    }
+
+    .four-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background .col-3,
+    .eight-section-background .col-3,
+    .eleven-section-background .col-3,
+    .fifteen-section-background .col-3,
+    .eighteen-section-background .col-3 {
+        width: 20%;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .five-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .six-section-background h1 {
+        font-family: 'Muli', sans-serif;
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+        font-weight: 400;
+        color: rgb(38, 38, 38);
+    }
+
+    .seven-section-background .container {
+        width: 80%;
+    }
+
+    .seven-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 5.6em;
+        margin: 0 auto;
+    }
+
+    .seven-section-background h3 {
+        font-size: 1.250em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .eight-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eight-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nine-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+    }
+
+    .ten-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.6em;
+        margin: 0 auto;
+    }
+
+    .ten-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eleven-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eleven-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .twelve-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+    }
+
+    .thirteen-section-background h1 {
+        font-size: 4em;
+        margin-left: 1em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .fourteen-section-background .container {
+        width: 80%;
+    }
+
+    .fourteen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.6em;
+        margin: 0 auto;
+    }
+
+    .fourteen-section-background h3 {
+        font-size: 1.714em
+    }
+
+    .fifteen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .fifteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .seventeen-section-background .container {
+        width: 80%;
+    }
+
+    .sixteen-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+    }
+
+    .seventeen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.6em;
+        margin: 0 auto;
+    }
+
+    .seventeen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eighteen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eighteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .nineteen-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+    }
+
+    .twenty-section-background .container {
+        width: 80%;
+    }
+
+    .twenty-section-background h1 {
+        font-size: 5.000em;
+        margin-top: 2em;
+    }
+
+    .twenty-section-background h3 {
+        font-size: 1.2em;
+        margin-top: 4em;
+    }
+}
+
+@media (max-width: 375px) {
+    section {
+        width: auto;
+        height: auto;
+        padding-bottom: 56.33%;
+        max-height: 20.000em;
+    }
+
+    body {
+        font-size: 7px;
+    }
+
+    .container {
+        padding: 1.429em;
+    }
+
+    h1 {
+        /*margin-top: 4em;*/
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2.286em;
+    }
+
+    h4 {
+        font-size: 1.429em;
+    }
+
+    .two-section-background p {
+        padding: 0;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+
+    .three-section-background .col-1,
+    .col-2 {
+        width: 50%;
+        margin: 0;
+        padding: 0.714em;
+        float: left;
+    }
+
+    .three-section-background h1 {
+        font-size: 2.571em;
+        text-align: left;
+        font-family: 'Aguafina Script', cursive;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        color: rgb(136, 121, 82);
+    }
+
+    .three-section-background h4 {
+        font-family: 'Muli', sans-serif;
+        font-size: 1.714em;
+        margin: 0;
+    }
+
+    .four-section-background .container {
+        margin: 0 auto;
+        padding: 4.286em;
+        width: 80%;
+    }
+
+    .four-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 2.286em;
+        margin: 0 auto;
+    }
+
+    .four-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background .col-3,
+    .eight-section-background .col-3,
+    .eleven-section-background .col-3,
+    .fifteen-section-background .col-3,
+    .eighteen-section-background .col-3 {
+        width: 20%;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .five-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .six-section-background h1 {
+        font-family: 'Muli', sans-serif;
+        font-size: 5em;
+        margin-left: 0.6em;
+        margin-top: 0.2em;
+        text-align: left;
+        font-weight: 400;
+        color: rgb(38, 38, 38);
+    }
+
+    .seven-section-background .container {
+        width: 80%;
+    }
+
+    .seven-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .seven-section-background h3 {
+        font-size: 1.250em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .eight-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eight-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nine-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.6em;
+        margin-top: 0.2em;
+        text-align: left;
+    }
+
+    .ten-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .ten-section-background .container {
+        width: 80%;
+    }
+
+    .eleven-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eleven-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .twelve-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.4em;
+        margin-top: 0.2em;
+        text-align: left;
+    }
+
+    .thirteen-section-background h1 {
+        font-size: 3em;
+        margin-left: 1em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .fourteen-section-background .container {
+        width: 80%;
+    }
+
+    .fourteen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .fourteen-section-background h3 {
+        font-size: 1.714em
+    }
+
+    .fifteen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .fifteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sixteen-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.4em;
+        margin-top: 0.2em;
+        text-align: left;
+    }
+
+    .seventeen-section-background .container {
+        width: 80%;
+    }
+
+    .seventeen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .seventeen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eighteen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eighteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nineteen-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.4em;
+        margin-top: 0.2em;
+        text-align: left;
+    }
+
+    .twenty-section-background .container {
+        width: 80%;
+    }
+
+    .twenty-section-background h1 {
+        font-size: 5.000em;
+        margin-top: 2em;
+    }
+
+    .twenty-section-background h3 {
+        font-size: 1.2em;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 320px) {
+    section {
+        width: auto;
+        height: auto;
+        padding-bottom: 56.33%;
+        max-height: 20.000em;
+    }
+
+    body {
+        font-size: 5px;
+    }
+
+    .container {
+        padding: 1.429em;
+    }
+
+    h1 {
+        /*margin-top: 5em;*/
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2.286em;
+    }
+
+    h4 {
+        font-size: 1.429em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .two-section-background p {
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 2px;
+    }
+
+    .three-section-background .col-1,
+    .col-2 {
+        width: 50%;
+        margin: 0;
+        padding: 0.714em;
+        float: left;
+    }
+
+    .three-section-background h1 {
+        font-size: 2.571em;
+        text-align: left;
+        font-family: 'Aguafina Script', cursive;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        color: rgb(136, 121, 82);
+    }
+
+    .three-section-background h4 {
+        font-family: 'Muli', sans-serif;
+        font-size: 1.714em;
+        margin: 0;
+    }
+
+    .four-section-background .container {
+        margin: 0 auto;
+        padding: 4.286em;
+        width: 80%;
+    }
+
+    .four-section-background h1 {
+        font-size: 2em;
+        padding: 3em 1.286em 0 1.286em;
+        margin: 0 auto;
+    }
+
+    .four-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background .col-3,
+    .eight-section-background .col-3,
+    .eleven-section-background .col-3,
+    .fifteen-section-background .col-3,
+    .eighteen-section-background .col-3 {
+        width: 20%;
+        padding: 0;
+    }
+
+    .five-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .five-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .six-section-background h1 {
+        font-family: 'Muli', sans-serif;
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+        font-weight: 400;
+        color: rgb(38, 38, 38);
+    }
+
+    .seven-section-background .container {
+        width: 80%;
+    }
+
+    .seven-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .seven-section-background h3 {
+        font-size: 1.250em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .eight-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eight-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nine-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+    }
+
+    .ten-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .ten-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eleven-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eleven-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .twelve-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+    }
+
+    .thirteen-section-background h1 {
+        font-size: 4em;
+        margin-left: 1em;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    .fourteen-section-background .container {
+        width: 80%;
+    }
+
+    .fourteen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .fourteen-section-background h3 {
+        font-size: 1.714em
+    }
+
+    .fifteen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .fifteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .seventeen-section-background .container {
+        width: 80%;
+    }
+
+    .sixteen-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+    }
+
+    .seventeen-section-background h1 {
+        font-size: 2.286em;
+        padding-top: 4.286em;
+        margin: 0 auto;
+    }
+
+    .seventeen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eighteen-section-background h3 {
+        font-size: 1.714em;
+    }
+
+    .eighteen-section-background p {
+        font-size: 0.714em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nineteen-section-background h1 {
+        font-size: 5em;
+        margin-left: 0.8em;
+        margin-top: 0.5em;
+        text-align: left;
+    }
+
+    .twenty-section-background .container {
+        width: 80%;
+    }
+
+    .twenty-section-background h1 {
+        font-size: 5.000em;
+        margin-top: 2em;
+    }
+
+    .twenty-section-background h3 {
+        font-size: 1.2em;
+        margin-top: 3.5em;
+    }
+}
+
+/*div.container {
+    margin-top: 20px;
+    margin-left: 44px;
+    margin-right: 44px;
+}*/
+
+div.container div.scroll-wrapper {
+    overflow: auto;
+}
+
+div.scroll-wrapper > table {
+    table-layout: fixed;
+}
+
+div.scroll-wrapper > table td, th {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.scroll-wrapper > table td {
+    width: 89px;
+    max-width: 89px;
+    height: auto;
+    min-height: 50px;
+}
+
+div.scroll-wrapper > table > tr.sr-photos > td {
+    background: #887959;
+    height: 157px;
+}
+
+div.sr-what-say > p {
+    text-align: justify;
+}
+
+div.sr-what-say > p.sr-description {
+    text-align: center;
+    font-size: 120%;
+}
+
+.dashboard-section {
+    background: #fff;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.dashboard-section .container {
+    padding: 20px 40px;
+    padding-left: 60px;
+    margin: 15px;
+    border: 1px solid #aaa;
+    width: 930px !important;
+    color: #000;
+}
+
+.intro-section {
+    background: #fff;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.intro-section .container {
+    padding: 20px 40px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin: 15px;
+    border: 1px solid #aaa;
+    width: 930px !important;
+    color: #000;
+}
+
+.intro-section .container .container {
+    width: 860px !important;
+}
+
+.intro-section p {
+    line-height: 1;
+
+}
+
+.sr-report-title {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.sr-current-report-label {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #00a0d2;
+}
+
+.sr-report-student-title {
+    text-align: center;
+    font-size: 72px;
+}
+
+.sr-report-date {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.sr-page-number {
+    color: #ccc;
+}
+
+.sr-recent-reports,
+.sr-recent-reports td {
+    border: none;
+}
+
+.sr-report-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    border: 1px solid black;
+    padding: 2px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sr-current-report {
+    font-weight: bold;
+    color: #00a0d2;
+    border: 1px solid #00a0d2;
+    padding: 2px 5px;
+}
+
+.sr-child-title {
+    padding: 0;
+    padding-top: 20px;
+}
+
+.xdsoft_enabled {
+    background: #333 !important;
+    color: #fff !important;
+}
+
+.xdsoft_today {
+    background: #fff !important;
+    color: #777 !important;
+
+}
+
+.sr-logout-links {
+    text-align: right;
+}
+
+.savepdf {
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 250px;
+}
+
+.one-section-background h1 {
+    margin-top: 20px !important;
+}
+
+.sr-welcome {
+    margin-top: 300px;
+}
+
+.sr-dashboard-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.observation li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.goals,
+.exp_list {
+    margin-left: 30px;
+}
+
+.goal,
+.exp {
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+}
+
+.observation {
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.observation:first-of-type {
+    border: 0;
+    padding-top: 0;
+}
+
+.goal:nth-child(1),
+.exp:first-of-type {
+    border: 0;
+    margin-top: 0;
+}
+
+.sr-photos img {
+    width: 89px!important;
+    height: 157px!important;
+}
+
+.table-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Zebra striping */
+.table-summary tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+.table-summary th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+    text-transform: none;
+    text-align: center;
+}
+
+.table-summary td, .table-summary th {
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+.table-summary td {
+    text-align: left;
+}

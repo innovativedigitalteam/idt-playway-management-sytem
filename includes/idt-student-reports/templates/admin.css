@@ -1,0 +1,130 @@
+fieldset {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    padding: 20px 20px;
+    background: #f1f1f1;
+}
+
+legend {
+    font-size: 24px;
+}
+
+fieldset {
+    min-width: 500px;
+}
+
+div.sr-data-block, div.tgroup-data-block {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+div.sr-photo-block, div.tgroup-photo-block {
+    width: 250px;
+    height: 100%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.sr-photo-block label, div.trgroup-photo-block label {
+    display: block;
+}
+
+.sr-thumb {
+    width: 1px;
+}
+
+.sr-thumb img {
+    padding: 4px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.sr-upload {
+    width: 200px;
+    padding-left: 10px;
+}
+
+.sr-upload label {
+    color: red;
+}
+
+.sr-what-say {
+    margin-top: 20px;
+}
+
+.sr-what-say label {
+    font-size: 16px;
+}
+
+.student-label {
+    font-size: 24px;
+    padding-left: 24px;
+}
+
+.sr-notify-area {
+    text-align: right;
+}
+
+#hidden_image {
+    visibility: hidden;
+}
+
+.empty {
+    display: none;
+}
+
+.appears-below {
+    margin-top: 100px;
+}
+
+#entries fieldset, #t-goals fieldset, #t-journal-entries fieldset {
+    position: relative;
+}
+
+#entries .close, #t-goals .close, #t-journal-entries .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#entries .attachmant_type {
+    display: none;
+}
+
+#wpfooter {
+    position: static !important;
+}
+
+.pdf_files .close {
+    width: 14px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+textarea {
+    display: block;
+}
+
+.child-program-summary td:first-child {
+    width: 300px;
+}
+
+
+/*24-10-2017 style changes for textarea's in parent remports*/
+.sr-teachers-say textarea {
+    width: 230px;
+    resize: none;
+    height: 100px;
+}
+
+.sr-family-say textarea {
+    width: 230px;
+    height: 100px;
+    resize: none;
+}
