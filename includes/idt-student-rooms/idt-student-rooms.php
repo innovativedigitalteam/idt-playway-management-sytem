@@ -20,147 +20,135 @@ register_deactivation_hook( __FILE__, 'deactivateSmTest' );
 
 require plugin_dir_path( __FILE__ ) . 'includes/StudentRooms.php';
 
-require plugin_dir_path( __FILE__ ) . 'includes/rooms-archive.php';
-
-function sm_load_styles() {
-	wp_enqueue_style('sm-bootstrap-style', plugin_dir_url( __FILE__ ) . 'assets/bootstrap.css' );
-	wp_enqueue_style('sm-main-style', plugin_dir_url( __FILE__ ) . 'assets/style.css' );
-	wp_enqueue_style('sm-calendar-style', plugin_dir_url( __FILE__ ) . 'assets/calendar.css' );
-
-	wp_register_script('sm-main-script', plugin_dir_url( __FILE__ ) . 'assets/script.js', array('jquery'));
-	wp_enqueue_script('sm-main-script');
-}
-
-add_action( 'admin_enqueue_scripts', 'sm_load_styles' );
-
-/*
-*
-* Removing trash option for non admins for custom posts
-* room_checklists
-* ar_room_checklists
-* child_checklits
-* ar_child_checklists
-* 
-*/
-
-function remove_lists_types()
+function idt_playway_post_types()
 {
-		$plugin_post_types = array(
-						'room_checklists',
-						'ar_room_checklists',
-						'child_checklits',
-						'ar_child_checklists'
-					);
+		$labels = array(
+		'name'				=> 'Center',
+		'singular_name'		=> 'center',
+		'add_new'			=> 'Add New center',
+		'add_new_item'		=> 'Add New center',
+		'edit'				=> 'Edit center',
+		'edit_item'			=> 'Edit center',
+		'new_item'			=> 'New center',
+		'view'				=> 'View center',
+		'view_item'			=> 'View center',
+		'search_items'		=> 'Search Rooms',
+		'not_found'			=> 'Nothing found',
+		'not_found_in_trash'=> 'Nothing found in Trash',
+		'parent_item_colon'	=> '',
+		'all_items' 		=>  'All Rooms',
+	);
+	 $args = array(
+    'labels'        => $labels,
+    'description'       => 'Centers',
+    'public'        => true,
 
-		foreach ($plugin_post_types as $key ) {
-		add_filter( 'views_edit-'.$key, function( $views )
-		{
-		    if( current_user_can('administrator')) { return $views; } else {
-		    	$remove_views = [ 'all','future','sticky','draft','pending','trash' ];
-			    foreach( (array) $remove_views as $view )
-			    { if( isset( $views[$view] ) )
-			            unset( $views[$view] ); } return $views; }  
-		});
-	}
+    'show_ui'       => true,
+    'menu_icon'       => 'dashicons-building',
+    'supports'        => array('title'),
+    'capability_type' => 'post',
+    'capabilities' => array(
+      'create_posts' => true, 
+    ),
+    'map_meta_cap' => true, 
+    );
 
-	// if user is not admin , then move to trash option is disabled.
-	if(!current_user_can('administrator'))//not and admin
-	{
-	    global $pagenow;
-	    if ( 'post.php' == $pagenow || 'post-new.php' == $pagenow ) {
-	        add_action( 'admin_head', 'wpse_125800_custom_publish_box' );
-	        function wpse_125800_custom_publish_box() {
-	            $style = '';
-	            $style .= '<style type="text/css">';
-	            $style .= '#delete-action, .bulkactions';
-	            $style .= '{display: none; }';
-	            $style .= '</style>';
+  	register_post_type('center', $args);
 
-	            echo $style;
-	        }
-	    }
-	}
+  	$labels = array(
+		'name'				=> 'Student Rooms',
+		'singular_name'		=> 'Room',
+		'add_new'			=> 'Add New Room',
+		'add_new_item'		=> 'Add New Room',
+		'edit'				=> 'Edit Room',
+		'edit_item'			=> 'Edit Room',
+		'new_item'			=> 'New Room',
+		'view'				=> 'View Room',
+		'view_item'			=> 'View Room',
+		'search_items'		=> 'Search Rooms',
+		'not_found'			=> 'Nothing found',
+		'not_found_in_trash'=> 'Nothing found in Trash',
+		'parent_item_colon'	=> '',
+		'all_items' 		=>  'All Rooms',
+	);
+
+	$args = array(
+		'labels'				=> $labels,
+		'description' 			=> 'Student Rooms',
+		'public'				=> true,
+		'show_ui'				=> true,
+		'menu_icon'				=> 'dashicons-store',
+        'supports' 				=> array('title')
+	);
+
+	register_post_type('rooms', $args);
+
+	$labels = array(
+		'name'				=> 'Room Checklists',
+		'singular_name'		=> 'Room Checklist',
+		'add_new'			=> 'Create Room Checklist',
+		'add_new_item'		=> 'Create Room Checklist',
+		'edit'				=> 'Edit Room Checklist',
+		'edit_item'			=> 'Edit Room Checklist',
+		'new_item'			=> 'New Room Checklist',
+		'view'				=> 'View Room Checklist',
+		'view_item'			=> 'View Room Checklist',
+		'search_items'		=> 'Search Checklist',
+		'not_found'			=> 'Nothing found',
+		'not_found_in_trash'=> 'Nothing found in Trash',
+		'parent_item_colon'	=> '',
+		'all_items' 		=>  'All Room Checklists',
+	);
+
+	$args = array(
+		'labels'				=> $labels,
+		'description' 			=> 'Room Checklists',
+		'public'				=> true,
+		'show_ui'				=> true,
+		'menu_icon'				=> 'dashicons-yes',
+        'supports' 				=> array(''),
+       
+        // 'taxonomies'            => array( 'category' )
+	);
+
+	register_post_type('room-checklists', $args);
+
+
+
+	$labels = array(
+		'name'				=> 'Child Checklists',
+		'singular_name'		=> 'Child Checklist',
+		'add_new'			=> 'Create Child Checklist',
+		'add_new_item'		=> 'Create Child Checklist',
+		'edit'				=> 'Edit Child Checklist',
+		'edit_item'			=> 'Edit Child Checklist',
+		'new_item'			=> 'New Child Checklist',
+		'view'				=> 'View Child Checklist',
+		'view_item'			=> 'View Child Checklist',
+		'search_items'		=> 'Search Checklist',
+		'not_found'			=> 'Nothing found',
+		'not_found_in_trash'=> 'Nothing found in Trash',
+		'parent_item_colon'	=> '',
+		'all_items' 		=>  'All Child Checklists',
+	);
+
+	$args = array(
+		'labels'				=> $labels,
+		'description' 			=> 'Child Checklists',
+		'public'				=> true,
+		'show_ui'				=> true,
+		'menu_icon'				=> 'dashicons-list-view',
+        'supports' 				=> array(''),
+      
+        // 'taxonomies'            => array( 'category' )
+	);
+
+	register_post_type('child-checklists', $args);
+
+	
+
+
 }
-add_action('init', 'remove_lists_types');
-
-//removing row action below each post
-add_filter( 'post_row_actions', 'remove_row_actions', 10, 1 );
-function remove_row_actions( $actions )
-{
-	if( current_user_can('administrator'))
-    {
-        return $actions;
-    } else {
-	    if( get_post_type() === ('room_checklists' || 'ar_room_checklists' || 'child_checklits' || 'ar_child_checklists') )
-
-	        unset( $actions['clone'] );
-	        unset( $actions['trash'] );
-
-	    return $actions;
-	}
-}
 
 
-
-/*
-*
-* Cron jobs for moving child checklist and room checklist to archives checklist to their respective checklist, Job is scheduled to run on daily basis.
-*
-*/
-
-add_action('init',function (){
-
-	$time = wp_next_scheduled('checklists_to_archive_cron_hook' );
-	wp_unschedule_event( $time, 'checklists_to_archive_cron_hook' );
-  if (!wp_next_scheduled('checklists_to_archive_cron_hook' )) {
-    wp_schedule_event( time(), 'daily', 'checklists_to_archive_cron_hook' );
-  }
-} );
-
-add_action('checklists_to_archive_cron_hook',function (){
-	// cron job for child checklists for moving to archive
-   	global $post;
-
-	  $args_child = array( 
-	    'post_type'       => 'child_checklists',
-	    'posts_per_page'  => -1,
-	  );
-
-	  $listings_child = get_posts( $args_child );
-	    foreach($listings_child as $post) : setup_postdata($post);
-
-	  $today = date( 'Ymd' );
-	  $expire = get_the_time('Ymd', $post->ID);
-
-        if ( $expire < $today ) :
-           
-           $status =  set_post_type( $post->ID, 'ar_child_checklists' );
-       		
-        endif;  
-    endforeach;
-
-    wp_reset_query();
-	// cron job for room checklists for moving to archive
-
-      $args_room_checklist = array( 
-	    'post_type'       => 'room_checklists',
-	    'posts_per_page'  => -1,
-	  );
-
-	  $listings_room_checklist = get_posts( $args_room_checklist );
-	    foreach($listings_room_checklist as $post) : setup_postdata($post);
-
-	  $today = date( 'Ymd' );
-	  $expire = get_the_time('Ymd', $post->ID);
-
-        if ( $expire < $today ) :
-           
-           $status =  set_post_type( $post->ID, 'ar_room_checklists' );
-       		
-        endif;  
-    endforeach;
-
- 
-} );
-
-
+add_action('init', 'idt_playway_post_types');

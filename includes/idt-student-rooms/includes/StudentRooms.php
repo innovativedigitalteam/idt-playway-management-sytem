@@ -2,127 +2,6 @@
 
 function registerPostTypes() {
 
-	$labels = array(
-		'name'				=> 'Student Rooms',
-		'singular_name'		=> 'Room',
-		'add_new'			=> 'Add New Room',
-		'add_new_item'		=> 'Add New Room',
-		'edit'				=> 'Edit Room',
-		'edit_item'			=> 'Edit Room',
-		'new_item'			=> 'New Room',
-		'view'				=> 'View Room',
-		'view_item'			=> 'View Room',
-		'search_items'		=> 'Search Rooms',
-		'not_found'			=> 'Nothing found',
-		'not_found_in_trash'=> 'Nothing found in Trash',
-		'parent_item_colon'	=> '',
-		'all_items' 		=>  'All Rooms',
-	);
-
-	$args = array(
-		'labels'				=> $labels,
-		'description' 			=> 'Student Rooms',
-		'public'				=> true,
-		'show_ui'				=> true,
-		'menu_icon'				=> 'dashicons-welcome-widgets-menus',
-        'supports' 				=> array('title')
-	);
-
-	register_post_type('rooms', $args);
-
-	$labels = array(
-		'name'				=> 'Room Checklists',
-		'singular_name'		=> 'Room Checklist',
-		'add_new'			=> 'Create Room Checklist',
-		'add_new_item'		=> 'Create Room Checklist',
-		'edit'				=> 'Edit Room Checklist',
-		'edit_item'			=> 'Edit Room Checklist',
-		'new_item'			=> 'New Room Checklist',
-		'view'				=> 'View Room Checklist',
-		'view_item'			=> 'View Room Checklist',
-		'search_items'		=> 'Search Checklist',
-		'not_found'			=> 'Nothing found',
-		'not_found_in_trash'=> 'Nothing found in Trash',
-		'parent_item_colon'	=> '',
-		'all_items' 		=>  'All Room Checklists',
-	);
-
-	$args = array(
-		'labels'				=> $labels,
-		'description' 			=> 'Room Checklists',
-		'public'				=> true,
-		'show_ui'				=> true,
-		'menu_icon'				=> 'dashicons-welcome-widgets-menus',
-        'supports' 				=> array(''),
-        'capabilities'        => array(
-			'publish_posts'       => 'publish_reports',
-			'edit_posts'          => 'edit_reports',
-			'edit_others_posts'   => 'edit_others_reports',
-			'delete_post'         => 'delete_reports',
-			'delete_posts'        => 'delete_reports',
-			'delete_others_posts' => 'delete_others_reports',
-			'read_private_posts'  => 'read_private_reports',
-			'edit_post'           => 'edit_reports',
-			'read_post'           => 'read_reports',
-		),
-        // 'taxonomies'            => array( 'category' )
-	);
-
-	register_post_type('room_checklists', $args);
-
-
-
-	$labels = array(
-		'name'				=> 'Child Checklists',
-		'singular_name'		=> 'Child Checklist',
-		'add_new'			=> 'Create Child Checklist',
-		'add_new_item'		=> 'Create Child Checklist',
-		'edit'				=> 'Edit Child Checklist',
-		'edit_item'			=> 'Edit Child Checklist',
-		'new_item'			=> 'New Child Checklist',
-		'view'				=> 'View Child Checklist',
-		'view_item'			=> 'View Child Checklist',
-		'search_items'		=> 'Search Checklist',
-		'not_found'			=> 'Nothing found',
-		'not_found_in_trash'=> 'Nothing found in Trash',
-		'parent_item_colon'	=> '',
-		'all_items' 		=>  'All Child Checklists',
-	);
-
-	$args = array(
-		'labels'				=> $labels,
-		'description' 			=> 'Child Checklists',
-		'public'				=> true,
-		'show_ui'				=> true,
-		'menu_icon'				=> 'dashicons-welcome-widgets-menus',
-        'supports' 				=> array(''),
-        'capabilities'        => array(
-			'publish_posts'       => 'publish_reports',
-			'edit_posts'          => 'edit_reports',
-			'edit_others_posts'   => 'edit_others_reports',
-			'delete_post'         => 'delete_reports',
-			'delete_posts'        => 'delete_reports',
-			'delete_others_posts' => 'delete_others_reports',
-			'read_private_posts'  => 'read_private_reports',
-			'edit_post'           => 'edit_reports',
-			'read_post'           => 'read_reports',
-		),
-        // 'taxonomies'            => array( 'category' )
-	);
-
-	register_post_type('child_checklists', $args);
-	add_action( 'admin_menu', 'my_plugin_menu' ,0);
-
-	function my_plugin_menu() {
-		add_menu_page( 
-			'Educator Check List',
-			'Educator Task Checklist',
-			'read',
-			'educator_checklist',
-			'educator_checklist_display'
-		);
-	}
-	
 
 
 
@@ -1589,7 +1468,7 @@ function checklistMetaInit()
 	add_filter( 'wp_insert_post_data' , 'modify_post_title' , '99', 1 );
 }
 
-add_action('init', 'registerPostTypes');
+
 add_action('admin_init','checklistMetaInit');
 add_action('admin_print_footer_scripts', 'get_child_fields', 99);
 add_action('wp_ajax_get_student_fields', 'get_student_fields');
