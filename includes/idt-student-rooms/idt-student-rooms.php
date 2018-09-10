@@ -54,27 +54,27 @@ function idt_playway_post_types()
     );
 
   	register_post_type('center', $args);
-
+$room = 'Class';
   	$labels = array(
-		'name'				=> 'Student Rooms',
-		'singular_name'		=> 'Room',
-		'add_new'			=> 'Add New Room',
-		'add_new_item'		=> 'Add New Room',
-		'edit'				=> 'Edit Room',
-		'edit_item'			=> 'Edit Room',
-		'new_item'			=> 'New Room',
-		'view'				=> 'View Room',
-		'view_item'			=> 'View Room',
+		'name'				=> $room,
+		'singular_name'		=> $room,
+		'add_new'			=> 'Add New '.$room,
+		'add_new_item'		=> 'Add New '.$room,
+		'edit'				=> 'Edit '.$room,
+		'edit_item'			=> 'Edit '.$room,
+		'new_item'			=> 'New '.$room,
+		'view'				=> 'View '.$room,
+		'view_item'			=> 'View '.$room,
 		'search_items'		=> 'Search Rooms',
 		'not_found'			=> 'Nothing found',
 		'not_found_in_trash'=> 'Nothing found in Trash',
 		'parent_item_colon'	=> '',
-		'all_items' 		=>  'All Rooms',
+		'all_items' 		=>  'All '.$room,
 	);
 
 	$args = array(
 		'labels'				=> $labels,
-		'description' 			=> 'Student Rooms',
+		'description' 			=> 'Student '.$room,
 		'public'				=> true,
 		'show_ui'				=> true,
 		'menu_icon'				=> 'dashicons-store',
@@ -152,3 +152,21 @@ function idt_playway_post_types()
 
 
 add_action('init', 'idt_playway_post_types');
+
+
+function idt_get_centers()
+{
+	$args = array(
+  		'posts_per_page' => -1,
+	  	'post_type'   => 'center'
+	);
+	 
+	$centers = get_posts( $args );
+	
+	foreach ($centers as $center) {
+		$return_array[] = (object)array('id' =>$center->ID , 'title' =>$center->post_title );
+		
+	}
+	
+	return  $return_array ;
+}

@@ -1,11 +1,5 @@
 <?php
 
-function registerPostTypes() {
-
-
-
-
-}
 
 function educator_save_data() {
 		global $wpdb;
@@ -323,14 +317,15 @@ function hope_room_meta_boxes( $post ) {
 function hope_render_room($post)
 {
    global $post,$wpdb;
- 	$sr_centres = $wpdb->get_results( "SELECT * FROM `{$wpdb->prefix}hope_centres`" );
+
+ 	$sr_centres = idt_get_centers();
 	$center_id =  get_post_meta( $post->ID,'center_id', true );
 	
 ?>
 
 <h2 class="hndle ui-sortable-handle"><strong>Select center</strong></h2>
 <select name="center_id">
-	<option <?php if (empty($center_id)) { echo "selected"; } ?> ></option>
+	<option <?php if (empty($center_id)) { echo "selected"; } ?> >Select Center</option>
 	<?php 
 		foreach ($sr_centres as $sr_centre) {
 			?>

@@ -9,7 +9,7 @@ Author: www.innnovativedigitalteam.com
 require_once plugin_dir_path( __FILE__ ) . 'includes/idt-student-rooms/idt-student-rooms.php';
 require_once plugin_dir_path( __FILE__ ) .'includes/idt-meta-fields/idt-meta-fields.php';
 //require_once plugin_dir_path( __FILE__ ) . 'includes/idt-student-reports/idt-student-reports.php';
-
+require_once plugin_dir_path( __FILE__ ) .'includes/idt-add-users.php';
 
 function sm_load_styles() {
 	wp_enqueue_style('sm-bootstrap-style', plugin_dir_url( __FILE__ ) . 'assets/bootstrap.css' );
